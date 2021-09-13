@@ -60,6 +60,8 @@ public interface InterfaceCrud<T> extends Serializable{
 	
 	Query obterQuery(String query) throws Exception;
 	
+	List<Object[]> getListaSQLDinamicaArray(String sql) throws Exception;
+	
 	// Carregamento dinamicao com JSF e primefaces
 	List<T> findListByQueryDinamica(String query, int iniciaNoRegistro, int maximoResultado) throws Exception;
 }
